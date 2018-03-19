@@ -14,10 +14,10 @@ $(document).ready(function(){
     // $("ul li")
 
     $("#box1").click(function(){
-        console.log("green box is clicked");
+        // console.log("green box is clicked");
     });
     $("#box2").dblclick(function(){
-        console.log("red box is clicked");
+        // console.log("red box is double clicked");
     })
     //COMMON EVENTS
     // click() click
@@ -42,6 +42,7 @@ $(document).ready(function(){
     });
 
     $("#box1").click(function(){
+        // $("#box1").toggleClass("higher");
         // $("#box2").hide();
         // $("#box2").show();
         // $("#box2").toggle(5000);
@@ -51,7 +52,26 @@ $(document).ready(function(){
         // $("#box2").removeClass();
         // $("#box2").toggleClass("wider");
         // $("#box2").css("background-color", "pink");
-        $("#box2").css({"background-color":"pink", "width":"500px"})
+        // $("#box2").css({"background-color":"pink", "width":"500px"})
+    });
+
+    // $("#box2").click(function(){
+    //     $("#box2").toggleClass("higher");
+    // })
+
+    // $(".box").click(function(){
+    //     $(this).toggleClass("higher");
+    // });
+
+    $("#button").click(function(){
+        // $("#paragraph").append(" This text gets added to the end.");
+        // $("#paragraph").prepend("This is adding to the start. ");
+        // $("#paragraph").text("overide the text.");
+        // $("#paragraph").empty();
+        // $("#paragraph").remove();
+        $("#list1").append("<li class='listColor'>This is a list item</li>");
+        $("body").append("<div class='box blue'></div>");
+        $("#info").show();
     });
 
 
